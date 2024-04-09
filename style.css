@@ -1,0 +1,57 @@
+/* Create a dark background. */
+body {
+	background: #000;
+background-image: url(pngegg\ \(1\).png);
+	margin: 0;
+	font-family: "Amiri", serif;
+	
+}
+
+/* Fit the canvas to the page width. */
+canvas {
+	/* display: block; */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+  /* تحديد تأثير الانتقال */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10vh); }
+    60% { transform: translateY(-5vh); }
+  }
+
+  /* تطبيق التأثير على العنصر */
+  .festive-text {
+    font-size: 6vw;
+    animation: bounce 2s infinite;
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* تعديل حجم النص عند تغيير حجم الشاشة */
+  @media screen and (max-width: 768px) {
+    .festive-text {
+      font-size: 6vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .festive-text {
+      font-size: 8vw;
+    }
+  }
+
+  .eid-img1{
+    position: absolute;
+    left: 17px;
+    margin: 0;
+    padding: 0;
+    width: 190px;
+  }
